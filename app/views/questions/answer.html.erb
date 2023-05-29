@@ -1,0 +1,15 @@
+<div class="border border-0 mt-2 mb-2 p-2 rounded shadow p-3 mb-5 bg-body rounded">
+  <h1 class= "mt-2">Stupid Coaching</h1>
+  <br>
+  <div class="border-start border-5">
+    <p class="font-monospace ms-2"><%= params[:question].capitalize %></p>
+    <p class="font-monospace fst-italic ms-2">-You</p>
+  </div>
+    <br>
+  <div class="border-start border-5">
+    <p class="font-monospace ms-2">- <%= @answer %></p>
+    <p class="font-monospace fst-italic fw-bold ms-2" >-Your Coach</p>
+  </div>
+    <br>
+  <%= link_to "Ask a new question", ask_path %>
+</div>
